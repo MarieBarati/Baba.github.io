@@ -7,7 +7,7 @@
     <style>
         @font-face {
             font-family: 'MirEmadThuluth';
-            src: url('fonts/Suls-mir-emad/Suls.ttf') format('ttf'), url('fonts/Suls-mir-emad/Suls.ttf') format('ttf');
+            src: url('fonts/Suls-mir-emad/Suls.ttf') format('truetype'), url('../fonts/Suls-mir-emad/Suls.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -26,15 +26,19 @@
         .image-container {
 
         }
+        audio {
+            width: 500px;
+        }
         .text {
+            font-family: 'MirEmadThuluth', sans-serif;
             padding: 20px;
             width: 90%;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 40px;
-            color:black;
-            font-size:45px;
+            color: black;
+            font-size: 45px;
         }
         .image {
             transform: scale(0.9);
@@ -42,15 +46,17 @@
             box-shadow: 11px 10px 17px 10px #607D8B;
         }
         .items {
-            margin-top: -30%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
         }
         .item {
             font-size:35px;
             font-weight:bold;
 /*            background-color: #19c6198a;*/
             width: 50%;
-            margin-right: 25%;
-            margin-top: 20px;
             margin-bottom: 20px;
             padding: 10px;
             border-radius: 20px;
